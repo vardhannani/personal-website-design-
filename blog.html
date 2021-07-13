@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="blog.css">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+<style>
+    .container{
+        display: grid;
+        grid-template-areas:
+         'header header header header'
+         'aside section section section'
+         'fotter fotter fotter fotter';
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    }
+    #header{
+        grid-area: header;
+        background-color: rgb(26, 109, 177);
+        height: 400px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    #section{
+        grid-area: section;
+        background-color: aquamarine;
+        height: 3214px;
+
+    }
+    #aside{
+        grid-area: aside;
+        background-color: rgb(248, 145, 231);
+        height: 3214px;
+        width: 315px;
+
+    }
+    #fotter{
+        grid-area: fotter;
+        background-color: rgb(82, 174, 248);
+        height: 700px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .nav a{
+        text-decoration: none;
+        margin:25px;
+        padding: 15px 10px;
+        color: black;
+        font-size: 30px;
+    }
+    .nav{
+        display: flex;
+        justify-content: center;
+        padding: 20px 34px;
+    }
+    .blog{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .head{
+        display: flex;
+        justify-content: center;
+        font-family: 'Ubuntu', sans-serif;
+        
+    }
+    #aside a {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        padding: 25px 34px;
+        margin: 10px 50px;
+        color: black;
+        font-family: 'Ubuntu', sans-serif;
+        border: 1px solid black;
+        border-radius: 13px;
+        box-shadow: 14px 5px 11px black;
+        transition-property: background-color;
+    }
+#aside a:hover{
+    background-color: rgb(211, 211, 211);
+}
+.sec{
+    margin: 20px 30px;
+    padding: 10px 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 17px 17px 30px black;
+    font-family: 'Ubuntu', sans-serif;
+}
+.sec a{
+    text-decoration: none;
+}
+.sec2{
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.btn1{
+    display: flex;
+    justify-content: center;
+}
+.btn1 a{
+    text-decoration: none;
+    margin: 30px 15px;
+    padding: 10px 10px;
+    border-radius: 9px;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 6px 4px 8px black;
+    transition-property: background-color;
+}
+.btn1 a:hover{
+    background-color: rgb(255, 255, 255);
+}
+.image{
+   display: flex;
+   justify-content: center;
+}
+.image img{
+    margin: 25px;
+   border: 1px solid black;
+   border-radius: 10px;
+   box-shadow: 20px 14px 29px 
+}
+.btn2{
+    display: flex;
+    justify-content: center;
+}
+.btn2 a{
+    text-decoration: none;
+    margin: 30px 15px;
+    padding: 10px 10px;
+    border-radius: 9px;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 6px 4px 8px rgb(0, 0, 0);
+    transition-property: background-color;
+}
+.btn2 a:hover{
+    background-color: rgb(252, 252, 252);
+}
+.image2{
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+}
+.image2 img{
+    margin: 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 6px 4px 8px black;
+    box-shadow: 20px 14px 29px 
+}
+.btn3{
+    display: flex;
+    justify-content: center;
+}
+.btn3 a{
+    text-decoration: none;
+    margin: 30px 15px;
+    padding: 10px 10px;
+    border-radius: 9px;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 6px 4px 8px rgb(0, 0, 0);
+    transition-property: background-color;
+}
+.btn3 a:hover{
+    background-color: rgb(252, 252, 252);
+}
+.image3{
+    display: flex;
+    justify-content: center;
+}
+.image3 img{
+    margin: 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 6px 4px 8px black;
+    box-shadow: 20px 14px 29px 
+}
+.btn4{
+    display: flex;
+    justify-content: center;
+}
+.btn4 a{
+    text-decoration: none;
+    margin: 30px 15px;
+    padding: 10px 10px;
+    border-radius: 9px;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 6px 4px 8px rgb(0, 0, 0);
+    transition-property: background-color;
+}
+.btn4 a:hover{
+    background-color: rgb(252, 252, 252);
+}
+.box {
+    display: flex;
+    justify-content: center;
+    margin: 30px 30px;
+}
+.box input{
+    border: 2px solid black;
+    margin: 7px 15px;
+    padding: 15px 50px;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.box2{
+    display: flex;
+    justify-content: center;
+}
+.box2 input{
+border: 2px solid black;
+height: 200px;
+width: 500px;
+border-radius: 5px;
+}
+.btn5{
+    display: flex;
+    justify-content: center;
+}
+.btn5 a{
+    text-decoration: none;
+    margin: 30px 15px;
+    padding: 10px 10px;
+    border-radius: 9px;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 6px 4px 8px rgb(0, 0, 0);
+    transition-property: background-color;
+}
+.btn5 a:hover{
+    background-color: white;
+}
+.heading2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+.email{
+    margin: 5px 30px;
+    padding: 10px ;
+    font-family: 'Ubuntu', sans-serif;
+}
+.email a{
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    }
+    .box5{
+        border: 1px solid black;
+        margin: 500px 20px;
+        padding: 20px 20px;
+        border-radius: 5px;
+        font-family: 'Ubuntu', sans-serif;
+        box-shadow: 6px 4px 8px rgb(0, 0, 0);
+ }
+    .box5 p a{
+        text-decoration: none;
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="header">
+            <div class="nav">
+               <ul>
+                   <a href="">Home</a>
+                   <a href="">About</a>
+                   <a href="">My Projects</a>
+               </ul>
+            </div>
+            <div class="blog">
+                <h1>WELCOME EVERYONE</h1>
+            </div>
+        </div>
+        <div id="section">
+            <div class="sec">
+                <h2>ABOUT ME</h2>
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius facere repellendus, in quidem quos autem reprehenderit doloremque incidunt? Quisquam, blanditiis molestiae corporis culpa porro dolorem inventore tenetur laborum laudantium eos amet <a href="">INSTAGRAM</a> labore fuga dignissimos corrupti autemb <a href="">GIT HUB</a> perspiciatis officiis molestias beatae. Ut, delectus voluptate? Accusamus molestias nesciunt reiciendis aperiam voluptas numquam sapiente minima tempore excepturi veniam? 
+               <div class=btn1>
+                   <a href="">CHECK OUT</a>
+               </div>
+               <div class="sec2">
+                   <h1>MY PROJECTS</h1>
+                   <h2>AI PERSNAL ASSISTENT</h2>
+                   <div class="image">
+                       <img src="ai (2).jpg" alt="">
+                   </div>
+                   <p>
+                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam eveniet a mollitia quibusdam, aut soluta quis neque iure doloribus nam rem accusantium quam sequi impedit aliquid ad suscipit odio omnis rerum necessitatibus? <a href="">GITHUB LINK</a> Laboriosam consectetur corrupti repellat quod maiores quae assumenda sequi aut quam atque. Quas aut consectetur qui saepe. Perspiciatis ex omnis aliquid nisi quaerat.
+                      <div class="btn2">
+                          <a href="">CHECK OUT</a>
+                      </div>
+                   </p>
+               </div>
+               <div class="sec3">
+                   <h2>STUDENT MARKS PREDICTER USING MECHINELEARNING ALGORITHM</h2>
+               </div>
+               <div class="image2">
+                   <img src="ai2 (2).jpeg" alt="">
+               </div>
+               <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nam neque tempore. Exercitationem aut at dolorum minus animi dolorem harum voluptatum quo repellat laborum ea quae quia, quas ex rem eveniet aliquam, maiores ipsum, <a href="https://github.com/vardhannani/STUDENT-MARKS-PREDICTION">CODE LINK</a> incidunt sunt? Impedit, dicta odio nemo optio magnam doloremque ab nulla architecto quibusdam! Consequuntur quo inventore cum nemo! Distinctio, reiciendis eum.
+                   <div class="btn3">
+                       <a href="">CHECK OUT</a>
+                   </div>
+               </p>
+               <div class="sec4">
+                   <h2>STARTUP PROFIT ESTIMATER</h2>
+               </div>
+               <div class="image3">
+                   <img src="startup (3).jpg" alt="">
+               </div>
+               <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque obcaecati eius ut numquam modi mollitia corporis nobis deserunt beatae facilis? Exercitationema ipsa <a href="https://github.com/vardhannani/startup-s-profit-estimation">CODE LINK</a> iure modi itaque porro consequatur nihil repellendus dolore autem, sunt quis error dolorum doloribus at, earum assumenda beatae! Praesentium veritatis labore perspiciatis, dolores ex nemo quas. Est dignissimos eius excepturi id sunt natus!
+                   <div class="btn4">
+                       <a href="">CHECK OUT</a>
+                   </div>
+               </p>
+            </div>
+        </div>
+        <div id="fotter">
+            <div class="email">
+                <h2>E MAIL</h2>
+                <a href="">vardhannani2003@gmail.com</a>
+            </div>
+            <div class="heading2">
+                <h1>SHARE YOUR EXPERIENCE WITH US</h1>
+            </div>
+            <div class="box">
+                <input type="text" placeholder="ENTER YOUR NAME">
+                <input type="text" placeholder="EMAIL">
+            </div>
+            <div class="box2">
+                <input type="text">
+            </div>
+            <div class="btn5">
+                <a href="">SUBMIT</a>
+            </div>
+        </div>
+
+        <div id="aside">
+
+            <div class="head">
+                <h2>MY PROJECTS</h2>
+            </div>
+                <a href="">Startup's Profit Estimater</a>
+                <a href="">Students Marks Predicter</a>
+                <a href="">AI Persnal Assistent</a>
+                <a href="">Frontend web desgine</a>
+                <div class="box5">
+                    <h2>OUR INSTA PAGE</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum tenetur esse a provident cum non consequuntur, accusamus, quaerat voluptatem minus velit? Vel molestiae, cumque voluptas rerum minus quas, assumenda at voluptatem inventore voluptatibus excepturi corrupti ab amet sint ipsum expedita, perspiciatis soluta quia! Illo quasi atque assumenda vitae velit debitis magnam, esse eaque provident quia.</p>
+                </div> 
+            </div>
+        </div>
+</body>
+</html>
